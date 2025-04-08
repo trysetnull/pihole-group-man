@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enable/disable Fire TV internet access</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      margin: 0;
+      flex-direction: column;
+    }
+    .button-container {
+      margin: auto;
+    }
+    .button {
+      margin: 5px;
+      padding: 10% 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .red-button {
+      background-color: #ff0000; /* Red */
+    }
+    .green-button {
+      background-color: #00ff00; /* Green */
+    }
+  </style>
+</head>
+<body>
+
+<div class="button-container">
+  <form method="post" action="execute.php">
+    <button type="submit" class="button red-button"  name="action" value="off">Block Internet</button>
+    <button type="submit" class="button green-button" name="action" value="on">Enable Internet</button>
+  </form>
+</div>
+
+</body>
+</html>
