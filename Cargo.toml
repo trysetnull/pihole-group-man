@@ -13,5 +13,6 @@ members = [
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 log = "0"
-rusqlite = { version = "0", features = ["bundled"] }
+pihole = { path = "pihole" }
 simple_logger = "4"
+tokio = { version = "1", features = ["full"] }
